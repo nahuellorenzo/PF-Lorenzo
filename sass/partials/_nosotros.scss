@@ -1,4 +1,43 @@
+/* SOBRE NOSOTROS PAGE MOBILE*/
+@use 'variables';
 
+.main_nosotros{
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: variables.$color-main;
+  h1{
+    margin: 1.2rem;
+    font-weight: bold;
+  }
+  .div__imagen{
+    padding: 0rem 2rem 2rem 2rem;
+    img{
+      border-radius: 2rem;
+    }
+  }
+  .textos__nosotros{
+    padding: 0rem 2rem 2rem 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .main_nosotros{
+    h1{
+      margin: 2.3rem;
+      font-size: 3rem;
+    }
+    .div__imagen{
+      height: 43rem;
+    }
+    .textos__nosotros{
+      padding-right: 3rem;
+      p{
+        font-size: 1rem;
+      }
+    }
+  }
+}
 
 /*------------------
 a{

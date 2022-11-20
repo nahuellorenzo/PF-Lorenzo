@@ -1,0 +1,30 @@
+div {
+  color: blue;
+}
+
+div {
+  color: yellow;
+}
+div p {
+  color: red;
+}
+
+h1 {
+  color: red;
+}
+
+a {
+  color: red;
+}
+a:hover {
+  color: green;
+}
+
+a {
+  color: red;
+}
+a:hover {
+  color: yellow;
+}
+
+/*# sourceMappingURL=estlos.css.map */

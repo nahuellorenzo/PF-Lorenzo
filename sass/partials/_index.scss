@@ -1,0 +1,23 @@
+@use 'variables';
+
+div {
+    color: variables.$color-main;
+}
+
+div {
+    color:yellow;
+    p {
+        color: red;
+    }
+}
+
+h1{
+    color: red
+}
+
+a{
+    color:red;
+    &:hover{
+        color: green;
+    }
+}

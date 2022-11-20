@@ -1,0 +1,325 @@
+/*---------------------
+$color-main: blue;
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HOME PAGE*/ /* VISTA MOBILE = MOBILE FIRST*/
+.main {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: rgb(240, 247, 238);
+}
+.main .main__h1 {
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  font-weight: bold;
+  margin: 1rem;
+}
+.main .main__actividades {
+  background-color: rgb(240, 247, 238);
+  overflow-y: auto;
+}
+.main .main__actividades .article__position {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.main .main__actividades .article__position .main__actividades__article__div__h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+.main .main__actividades .article__position .card {
+  width: 20rem;
+  height: 26rem;
+  background-color: #212121;
+  border-radius: 1rem;
+  border: #212121 0.2rem solid;
+  transition: all 0.4s ease-in;
+  box-shadow: 0.4rem 0.4rem 0.6rem rgba(0, 0, 0, 0.2509803922);
+  position: static;
+}
+.main .main__actividades .article__position .card:hover {
+  transform: translateY(-1.5rem);
+  border: rgb(245, 196, 52) 0.2em solid;
+  border-radius: 2.5rem 0 2.5rem 0;
+}
+.main .main__actividades .article__position .card .main__actividades__article__div {
+  height: 250px;
+  width: 250px;
+  margin: 20px;
+}
+.main .main__actividades .article__position .main__actividades__article__p {
+  font-size: 0.8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: rgb(240, 247, 238);
+}
+.main .main__instalaciones {
+  background-color: rgb(245, 196, 52);
+  overflow: auto;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.fuente {
+  font-family: "Roboto", sans-serif;
+}
+
+.whatsApp__div {
+  height: 60px;
+  width: 60px;
+  background-color: transparent;
+  position: fixed;
+  left: 81%;
+  top: 87%;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  .altura {
+    height: 89vh;
+  }
+  .whatsApp__div {
+    height: 80px;
+    width: 80px;
+    background-color: transparent;
+    position: fixed;
+    left: 92%;
+    top: 82%;
+  }
+}
+/*------------------------------
+div {
+    color: variables.$color-main;
+}
+
+a{
+    color:red;
+    &:hover{
+        color: green;
+    }
+}
+
+*/
+/*------------------
+a{
+    color:red;
+    &:hover{
+      color: yellow;
+    }
+  }
+*/
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 4;
+}
+header .header__nav__div__logo {
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+}
+header .header__nav__div__logo img {
+  height: 100%;
+  width: 100%;
+}
+header .color__button__var {
+  border: black solid 1px;
+}
+header .ul__li__a__color {
+  text-decoration: none;
+  color: rgb(240, 247, 238);
+  font-family: "Roboto", sans-serif;
+}
+header .ul__li__a__activo {
+  font-weight: bold;
+}
+header .nav__color__hover:hover {
+  color: rgb(245, 196, 52);
+}
+
+.color {
+  background-color: rgb(42, 43, 46);
+}
+
+/*VISTA MOBILA FOOTER*/
+footer {
+  background-color: rgb(42, 43, 46);
+  width: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+}
+footer .grilla {
+  display: grid;
+  grid-template-areas: "logo" "redes" "descripcion";
+  justify-items: center;
+}
+footer .grilla .footer__logo {
+  height: 100px;
+  width: 100px;
+  grid-area: logo;
+  background-color: transparent;
+  margin-top: 20px;
+}
+footer .grilla .footer__logo img {
+  height: 100%;
+  width: 100%;
+}
+footer .grilla .footer__redes {
+  grid-area: redes;
+}
+footer .grilla .wrapper {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  height: 200px;
+  width: 100%;
+  padding-top: 20px;
+  margin-right: 30px;
+  font-family: "Poppins", sans-serif;
+  justify-content: flex-start;
+}
+footer .grilla .wrapper .icon {
+  position: relative;
+  background: rgb(42, 43, 46);
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+footer .grilla .wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+footer .grilla .wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: 3;
+}
+footer .grilla .wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+footer .grilla .wrapper .icon:hover span,
+footer .grilla .wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+footer .grilla .wrapper .facebook:hover,
+footer .grilla .wrapper .facebook:hover .tooltip,
+footer .grilla .wrapper .facebook:hover .tooltip::before {
+  background: #1877F2;
+  color: #fff;
+}
+footer .grilla .wrapper .twitter:hover,
+footer .grilla .wrapper .twitter:hover .tooltip,
+footer .grilla .wrapper .twitter:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #fff;
+}
+footer .grilla .wrapper .instagram:hover,
+footer .grilla .wrapper .instagram:hover .tooltip,
+footer .grilla .wrapper .instagram:hover .tooltip::before {
+  background: #E4405F;
+  color: #fff;
+}
+footer .grilla .footer__aclaracion {
+  width: 100%;
+  color: rgb(240, 247, 238);
+  padding: 2rem 1.5rem 1.5rem 0rem;
+  margin-left: 2rem;
+  margin-right: 0.5rem;
+  font-size: 0.8rem;
+  grid-area: descripcion;
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 1024px) {
+  footer .grilla {
+    display: grid;
+    grid-template-areas: "logo redes" "linea linea" "descripcion descripcion";
+    grid-template-rows: 100px 20px 100px;
+    grid-template-columns: 1fr 1.5fr;
+    justify-items: flex-start;
+  }
+  footer .grilla .footer__logo {
+    height: 100px;
+    width: 100px;
+    grid-area: logo;
+    background-color: transparent;
+    margin-top: 20px;
+  }
+  footer .grilla .footer__redes {
+    grid-area: redes;
+  }
+  footer .grilla .footer__redes .wrapper {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    height: 120px;
+    width: 100%;
+    padding-top: 40px;
+    font-family: "Poppins", sans-serif;
+    justify-content: flex-start;
+  }
+  footer .grilla .separacion {
+    grid-area: linea;
+  }
+  footer .grilla .separacion .footer__separacion {
+    display: absolute;
+    width: 100vw;
+    border-top: 2px solid rgb(245, 196, 52);
+    height: 2px;
+    max-width: 60%;
+    padding: 0;
+    margin: 20px auto 0 auto;
+  }
+  footer .grilla .footer__aclaracion {
+    height: 40%;
+    width: 100%;
+    color: rgb(240, 247, 238);
+    padding: 2rem 0rem 0rem 2rem;
+    font-size: 1rem;
+    grid-area: descripcion;
+  }
+}
+
+/*# sourceMappingURL=estlos.css.map */

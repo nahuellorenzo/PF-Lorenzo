@@ -53,7 +53,6 @@
         color: rgb(150,150,150);
         font-size: small;
         padding-right: 0.3rem;
-        /*text-align: center;*/
         &:nth-child(1) {
             margin-top: 0.4em;
         }
@@ -67,10 +66,8 @@
             border-style: none;
             border-radius: 1000000px;
             color: variables.$color-dark;
-            /*color: rgb(239, 239, 239);*/
             font-weight: bold;
             background-color: variables.$color-yellow;
-            /*background-image: linear-gradient(45deg, #fe4fe1 0%, #3f00fe 100%);*/
             transition: box-shadow 0.15s ease-in-out;
             &:hover {
                 box-shadow: inset 0px 0px 5px rgb(0,0,0);
@@ -89,15 +86,13 @@
     align-items: center;
     .h1__plan{
         margin: 1.2rem;
-        font-family: 'Roboto', sans-serif;
+        font-family: variables.$font-roboto;
         font-weight: bold;
     }
 }
 
 .article__position__planes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend .main__div__div;
     padding-bottom: 1rem;
 }
 

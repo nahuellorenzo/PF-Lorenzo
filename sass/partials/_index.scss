@@ -7,11 +7,16 @@
 }
 
 /* HOME PAGE*/ /* VISTA MOBILE = MOBILE FIRST*/
+@mixin sizes($width, $height){
+    height: $height;
+    width: $width;
+}
+
 .main{
     height: 100%;
     width: 100%;
     overflow-x: hidden;
-    background-color: rgb(240, 247, 238);
+    background-color: variables.$color-main;
     .main__h1{
         text-align: center;
         font-size: 3rem;
@@ -21,7 +26,7 @@
         margin: 1rem 1rem 0rem 1rem;
     }
     .main__actividades{
-        background-color: rgb(240, 247, 238);
+        background-color: variables.$color-main;
         overflow-y: auto;
         .article__position{
             display: flex;
@@ -35,8 +40,7 @@
                 padding-bottom: 1rem;
             }
             .card {
-                width: 20rem;
-                height: 26rem;
+                @include sizes(20rem, 26rem);
                 background-color: #212121;
                 border-radius: 1rem;
                 border: #212121 0.2rem solid;
@@ -45,12 +49,11 @@
                 position: static;
                 &:hover{
                     transform: translateY(-1.5rem);
-                    border: rgb(245, 196, 52) 0.2em solid;
+                    border: variables.$color-yellow 0.2em solid;
                     border-radius: 2.5rem 0 2.5rem 0;
                 }
                 .main__actividades__article__div {
-                    height: 250px;
-                    width: 250px;
+                    @include sizes(250px, 250px);
                     margin: 20px;
                 }
             }
@@ -58,28 +61,26 @@
                 font-size: 0.8rem;
                 padding-left: 1rem;
                 padding-right: 1rem;
-                color: rgb(240, 247, 238);
+                color: variables.$color-main;
             }
         }
     }
     .main__instalaciones{
-        background-color: rgb(245, 196, 52);
+        background-color: variables.$color-yellow;
         overflow: auto;
     }
 }
 
 img{
-    height: 100%;
-    width: 100%;
+    @include sizes(100%, 100%);
 }
 
 .fuente{
-    font-family: 'Roboto', sans-serif;
+    font-family: variables.$font-roboto;
 }
 
 .whatsApp__div{
-    height: 60px;
-    width: 60px;
+    @include sizes(60px, 60px);
     background-color: transparent;
     position: fixed;
     left: 81%;
@@ -92,24 +93,10 @@ img{
         height: 89vh;
     }
     .whatsApp__div{
-        height: 80px;
-        width: 80px;
+        @include sizes(80px, 80px);
         background-color: transparent;
         position: fixed;
         left: 92%;
         top: 82%;  
     }
 }
-/*------------------------------
-div {
-    color: variables.$color-main;
-}
-
-a{
-    color:red;
-    &:hover{
-        color: green;
-    }
-}
-
-*/

@@ -1,23 +1,21 @@
 /* GIMNASIOS PAGE MOBILE*/
 @use 'variables';
+@use '_index.scss';
 
 .main__gimnasios{
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-    background-color: variables.$color-main;
+    @extend .main;
     h1{
         margin: 1.2rem;
         font-weight: bold;
-        font-family: 'Roboto', sans-serif;
+        font-family: variables.$font-roboto;
     }
     .h2__gimnasio{
-        font-family: 'Roboto', sans-serif;
+        font-family: variables.$font-roboto;
         margin-left: 1rem;
     }
     h3{
         text-align: center;
-        font-family: 'Roboto', sans-serif;
+        font-family: variables.$font-roboto;
         padding: 1rem;
         color: variables.$color-yellow;
         font-weight: bold;
@@ -36,8 +34,7 @@
     }
     .h2__maquinas{
         padding-bottom: 1rem;
-        font-family: 'Roboto', sans-serif;
-        margin-left: 1rem;
+        @extend .h2__gimnasio;
     }
 }
 
@@ -45,14 +42,13 @@
     width: 250px;
     height: 380px;
     padding: .8em;
-    /*background: #f5f5f5;*/
     border-radius: 1rem;
     background-color: variables.$color-dark;
     position: relative;
     overflow: visible;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     .card-img {
-        background-color: #ffcaa6;
+        background-color: variables.$color-yellow;
         height: 40%;
         width: 100%;
         border-radius: .5rem;
@@ -100,14 +96,14 @@
         font-weight: 900;
         font-size: 1.2em;
         line-height: 1.5;
-        font-family: 'Roboto', sans-serif;
+        font-family: variables.$font-roboto;
         color: variables.$color-main;
     }
     
     .text-boody {
         font-size: .9em;
         padding-bottom: 10px;
-        font-family: 'Roboto', sans-serif;
+        font-family: variables.$font-roboto;
         color: variables.$color-main;
     }
 }
@@ -123,7 +119,7 @@
             margin-left: 2rem;
         }
         .h2__maquinas{
-            margin-left: 2rem;
+            @extend .h2__gimnasio;
         }
         .carousel__altura{
             height: 95vh;

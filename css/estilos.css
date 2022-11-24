@@ -451,92 +451,120 @@ footer .grilla .footer__aclaracion {
 }
 /* PLANES PAGE*/
 .card__plan {
-  width: 190px;
-  height: 350px;
+  width: 250px;
+  height: 469.5px;
   border-radius: 1rem;
   background: rgb(45, 45, 45);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
   transition-duration: 0.5s;
   margin: 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
-
-.title {
+.card__plan:hover {
+  box-shadow: inset 0px 0px 5px yellow;
+  transition: box-shadow 0.15s ease-in-out;
+}
+.card__plan .title {
   text-align: center;
   margin-top: 0.5em;
   font-weight: bold;
   font-size: x-large;
   color: rgb(200, 200, 200);
 }
-
-.pricecontainer {
+.card__plan .pricecontainer {
   width: 100%;
   margin-top: 0.7em;
   background-color: rgb(30, 30, 30);
   box-shadow: inset 0px 0px 2em rgba(0, 0, 0, 0.3);
 }
-
-.price {
+.card__plan .pricecontainer .price {
   text-align: center;
   color: rgb(180, 180, 180);
   font-size: x-large;
   font-weight: bold;
   padding: 0.75em 0 0 0;
 }
-
-.pricedescriptor {
+.card__plan .pricecontainer .pricedescriptor {
   text-align: center;
   color: rgb(118, 118, 118);
   font-size: medium;
   padding: 0 0 1em 0;
 }
-
-.includes {
+.card__plan .includes {
   text-align: center;
   color: rgb(110, 110, 110);
   margin-top: 0.6em;
   font-size: small;
   font-weight: bold;
 }
-
-.benefitlist li {
+.card__plan .benefitlist li {
   color: rgb(150, 150, 150);
   font-size: small;
-  text-align: center;
+  padding-right: 0.3rem;
+  /*text-align: center;*/
 }
-
-.benefitlist li:nth-child(1) {
+.card__plan .benefitlist li:nth-child(1) {
   margin-top: 0.4em;
 }
-
-.btncontainer {
+.card__plan .btncontainer {
   text-align: center;
+  padding-bottom: 1rem;
 }
-
-.btncontainer button {
+.card__plan .btncontainer button {
   margin-top: 1em;
   padding: 0.5em 0.8em 0.5em 0.8em;
   border-style: none;
   border-radius: 1000000px;
-  color: rgb(239, 239, 239);
+  color: rgb(42, 43, 46);
+  /*color: rgb(239, 239, 239);*/
   font-weight: bold;
-  background-image: linear-gradient(45deg, #fe4fe1 0%, #3f00fe 100%);
+  background-color: rgb(245, 196, 52);
+  /*background-image: linear-gradient(45deg, #fe4fe1 0%, #3f00fe 100%);*/
   transition: box-shadow 0.15s ease-in-out;
 }
-
-.btncontainer button:hover {
+.card__plan .btncontainer button:hover {
   box-shadow: inset 0px 0px 5px rgb(0, 0, 0);
   transition: box-shadow 0.15s ease-in-out;
 }
-
-.h1__plan {
-  margin: 3rem;
+.card__plan .margen__btncontainer {
+  margin-top: 3.3rem;
 }
 
 .main__div__div {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.main__div__div .h1__plan {
+  margin: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.article__position__planes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .main__div__div .h1_plan {
+    margin: 2.3rem;
+    font-size: 3rem;
+  }
+  .card__plan {
+    width: 280px;
+  }
+  .card__plan .benefitlist li {
+    padding-right: 1rem;
+  }
+  .card__plan .margen__btncontainer {
+    margin-top: 2.3rem;
+  }
+  .card__plan .margen__btncontainer__plan3 {
+    margin-top: 3.7rem;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

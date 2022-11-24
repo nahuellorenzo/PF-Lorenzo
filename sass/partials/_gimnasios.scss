@@ -1,0 +1,132 @@
+/* GIMNASIOS PAGE MOBILE*/
+@use 'variables';
+
+.main__gimnasios{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: variables.$color-main;
+    h1{
+        margin: 1.2rem;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+    }
+    .h2__gimnasio{
+        font-family: 'Roboto', sans-serif;
+        margin-left: 1rem;
+    }
+    h3{
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        padding: 1rem;
+        color: variables.$color-yellow;
+        font-weight: bold;
+    }
+    .article__position__gimnasios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem
+    }
+    .section__maquina{
+        padding: 2rem 3rem 2rem 3rem;
+        .maquina__linea{
+            border-top: 1px solid variables.$color-dark;
+        }
+    }
+    .h2__maquinas{
+        padding-bottom: 1rem;
+        font-family: 'Roboto', sans-serif;
+        margin-left: 1rem;
+    }
+}
+
+.card__gimnasio{
+    width: 250px;
+    height: 380px;
+    padding: .8em;
+    /*background: #f5f5f5;*/
+    border-radius: 1rem;
+    background-color: variables.$color-dark;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    .card-img {
+        background-color: #ffcaa6;
+        height: 40%;
+        width: 100%;
+        border-radius: .5rem;
+        transition: .3s ease;
+        &:hover {
+            transform: translateY(-25%);
+            box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+        }
+    }
+    .card-info {
+        padding-top: 10%;
+        width: 224.406px;
+        height: 120.45px;
+    }
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+    .card-footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+        border-top: 1px solid #ddd;
+        .card-button {
+            border: 1px solid variables.$color-yellow;
+            display: flex;
+            padding: .3em;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: .3s ease-in-out;
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+            &:hover {
+                border: 1px solid variables.$color-yellow;
+                background-color: variables.$color-yellow;
+            }
+        }
+    }
+
+    .text-title {
+        font-weight: 900;
+        font-size: 1.2em;
+        line-height: 1.5;
+        font-family: 'Roboto', sans-serif;
+        color: variables.$color-main;
+    }
+    
+    .text-boody {
+        font-size: .9em;
+        padding-bottom: 10px;
+        font-family: 'Roboto', sans-serif;
+        color: variables.$color-main;
+    }
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 1024px){
+    .main__gimnasios{
+        h1{
+            margin: 2.3rem;
+            font-size: 3rem;
+        }
+        .h2__gimnasio{
+            margin-left: 2rem;
+        }
+        .h2__maquinas{
+            margin-left: 2rem;
+        }
+        .carousel__altura{
+            height: 95vh;
+        }
+    }
+}

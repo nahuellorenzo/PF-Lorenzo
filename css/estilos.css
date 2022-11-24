@@ -15,9 +15,9 @@
   text-align: center;
   font-size: 3rem;
   padding-top: 3rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   font-weight: bold;
-  margin: 1rem;
+  margin: 1rem 1rem 0rem 1rem;
 }
 .main .main__actividades {
   background-color: rgb(240, 247, 238);
@@ -132,6 +132,7 @@ a{
   padding: 0rem 2rem 2rem 2rem;
 }
 
+/* DESKTOP */
 @media screen and (min-width: 1024px) {
   .main_nosotros h1 {
     margin: 2.3rem;
@@ -155,6 +156,7 @@ a{
     }
   }
 */
+/* NAVBAR*/
 header {
   position: sticky;
   top: 0px;
@@ -170,7 +172,7 @@ header .header__nav__div__logo img {
   width: 100%;
 }
 header .color__button__var {
-  border: black solid 1px;
+  border: rgb(240, 247, 238) solid 1px;
 }
 header .ul__li__a__color {
   text-decoration: none;
@@ -548,6 +550,7 @@ footer .grilla .footer__aclaracion {
   padding-bottom: 1rem;
 }
 
+/*DESKTOP*/
 @media screen and (min-width: 1024px) {
   .main__div__div .h1_plan {
     margin: 2.3rem;
@@ -564,6 +567,132 @@ footer .grilla .footer__aclaracion {
   }
   .card__plan .margen__btncontainer__plan3 {
     margin-top: 3.7rem;
+  }
+}
+/* GIMNASIOS PAGE MOBILE*/
+.main__gimnasios {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: rgb(240, 247, 238);
+}
+.main__gimnasios h1 {
+  margin: 1.2rem;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+.main__gimnasios .h2__gimnasio {
+  font-family: "Roboto", sans-serif;
+  margin-left: 1rem;
+}
+.main__gimnasios h3 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  padding: 1rem;
+  color: rgb(245, 196, 52);
+  font-weight: bold;
+}
+.main__gimnasios .article__position__gimnasios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.main__gimnasios .section__maquina {
+  padding: 2rem 3rem 2rem 3rem;
+}
+.main__gimnasios .section__maquina .maquina__linea {
+  border-top: 1px solid rgb(42, 43, 46);
+}
+.main__gimnasios .h2__maquinas {
+  padding-bottom: 1rem;
+  font-family: "Roboto", sans-serif;
+  margin-left: 1rem;
+}
+
+.card__gimnasio {
+  width: 250px;
+  height: 380px;
+  padding: 0.8em;
+  /*background: #f5f5f5;*/
+  border-radius: 1rem;
+  background-color: rgb(42, 43, 46);
+  position: relative;
+  overflow: visible;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.card__gimnasio .card-img {
+  background-color: #ffcaa6;
+  height: 40%;
+  width: 100%;
+  border-radius: 0.5rem;
+  transition: 0.3s ease;
+}
+.card__gimnasio .card-img:hover {
+  transform: translateY(-25%);
+  box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+}
+.card__gimnasio .card-info {
+  padding-top: 10%;
+  width: 224.406px;
+  height: 120.45px;
+}
+.card__gimnasio svg {
+  width: 20px;
+  height: 20px;
+}
+.card__gimnasio .card-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+.card__gimnasio .card-footer .card-button {
+  border: 1px solid rgb(245, 196, 52);
+  display: flex;
+  padding: 0.3em;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+}
+.card__gimnasio .card-footer .card-button svg {
+  width: 20px;
+  height: 20px;
+}
+.card__gimnasio .card-footer .card-button:hover {
+  border: 1px solid rgb(245, 196, 52);
+  background-color: rgb(245, 196, 52);
+}
+.card__gimnasio .text-title {
+  font-weight: 900;
+  font-size: 1.2em;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  color: rgb(240, 247, 238);
+}
+.card__gimnasio .text-boody {
+  font-size: 0.9em;
+  padding-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(240, 247, 238);
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 1024px) {
+  .main__gimnasios h1 {
+    margin: 2.3rem;
+    font-size: 3rem;
+  }
+  .main__gimnasios .h2__gimnasio {
+    margin-left: 2rem;
+  }
+  .main__gimnasios .h2__maquinas {
+    margin-left: 2rem;
+  }
+  .main__gimnasios .carousel__altura {
+    height: 95vh;
   }
 }
 

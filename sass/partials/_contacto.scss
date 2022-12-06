@@ -2,6 +2,7 @@
 @use 'variables';
 
 .contacto__main{
+    height: 100%;
     overflow-x: hidden;
     background-color: variables.$color-main;
     .h1__contacto{

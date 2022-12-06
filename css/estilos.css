@@ -21,7 +21,6 @@
 }
 .main .main__actividades, .main__gimnasios .main__actividades, .main_nosotros .main__actividades {
   background-color: rgb(240, 247, 238);
-  overflow-y: auto;
 }
 .main .main__actividades .article__position, .main__gimnasios .main__actividades .article__position, .main_nosotros .main__actividades .article__position {
   display: flex;
@@ -61,6 +60,19 @@
   padding-right: 1rem;
   color: rgb(240, 247, 238);
 }
+.main .main__actividades .collapse:not(.show), .main__gimnasios .main__actividades .collapse:not(.show), .main_nosotros .main__actividades .collapse:not(.show) {
+  display: none;
+}
+.main .main__actividades .collapsing, .main__gimnasios .main__actividades .collapsing, .main_nosotros .main__actividades .collapsing {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s ease;
+}
+.main .main__actividades .boton__vermas, .main__gimnasios .main__actividades .boton__vermas, .main_nosotros .main__actividades .boton__vermas {
+  margin: 10px 0 0 0;
+  height: 40px;
+  padding-bottom: 3.5rem;
+}
 .main .main__instalaciones, .main__gimnasios .main__instalaciones, .main_nosotros .main__instalaciones {
   background-color: rgb(245, 196, 52);
   overflow: auto;
@@ -86,6 +98,18 @@ img {
 
 /* DESKTOP */
 @media screen and (min-width: 1024px) {
+  .main .main__actividades .article__position, .main__gimnasios .main__actividades .article__position, .main_nosotros .main__actividades .article__position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+  .main .main__actividades .boton__vermas, .main__gimnasios .main__actividades .boton__vermas, .main_nosotros .main__actividades .boton__vermas {
+    display: none;
+  }
+  .main .main__actividades .collapse:not(.show), .main__gimnasios .main__actividades .collapse:not(.show), .main_nosotros .main__actividades .collapse:not(.show) {
+    display: flex;
+  }
   .altura {
     height: 89vh;
   }
@@ -267,9 +291,7 @@ footer .grilla .wrapper .instagram:hover .tooltip::before {
 footer .grilla .footer__aclaracion {
   width: 100%;
   color: rgb(240, 247, 238);
-  padding: 0rem 1.5rem 1.5rem 0rem;
-  margin-left: 2rem;
-  margin-right: 0.5rem;
+  padding: 0rem 1.5rem 1.5rem 1.5rem;
   font-size: 0.8rem;
   grid-area: descripcion;
 }
@@ -319,13 +341,14 @@ footer .grilla .footer__aclaracion {
     height: 40%;
     width: 100%;
     color: rgb(240, 247, 238);
-    padding: 2rem 0rem 0rem 2rem;
+    padding: 2rem 2rem 0rem 2rem;
     font-size: 1rem;
     grid-area: descripcion;
   }
 }
 /*CONTACTO PAGE*/
 .contacto__main {
+  height: 100%;
   overflow-x: hidden;
   background-color: rgb(240, 247, 238);
 }
@@ -554,6 +577,18 @@ footer .grilla .footer__aclaracion {
   align-items: center;
   padding: 1rem;
 }
+.main__gimnasios .collapse:not(.show) {
+  display: none;
+}
+.main__gimnasios .collapsing {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s ease;
+}
+.main__gimnasios .boton__vermas {
+  margin: 10px 0 0 0;
+  height: 40px;
+}
 .main__gimnasios .section__maquina {
   padding: 2rem 3rem 2rem 3rem;
 }
@@ -649,6 +684,18 @@ footer .grilla .footer__aclaracion {
   }
   .main__gimnasios .carousel__altura {
     height: 95vh;
+  }
+  .main__gimnasios .article__position__gimnasios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  .main__gimnasios .boton__vermas {
+    display: none;
+  }
+  .main__gimnasios .collapse:not(.show) {
+    display: flex;
   }
 }
 

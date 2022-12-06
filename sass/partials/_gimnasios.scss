@@ -84,10 +84,16 @@
             svg {
                 width: 20px;
                 height: 20px;
+                .svg__carrito{
+                    fill: variables.$color-main;
+                }
             }
             &:hover {
                 border: 1px solid variables.$color-yellow;
                 background-color: variables.$color-yellow;
+                .svg__carrito{
+                    fill: variables.$color-dark;
+                }
             }
         }
     }

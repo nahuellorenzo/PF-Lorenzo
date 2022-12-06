@@ -614,9 +614,15 @@ footer .grilla .footer__aclaracion {
   width: 20px;
   height: 20px;
 }
+.card__gimnasio .card-footer .card-button svg .svg__carrito {
+  fill: rgb(240, 247, 238);
+}
 .card__gimnasio .card-footer .card-button:hover {
   border: 1px solid rgb(245, 196, 52);
   background-color: rgb(245, 196, 52);
+}
+.card__gimnasio .card-footer .card-button:hover .svg__carrito {
+  fill: rgb(42, 43, 46);
 }
 .card__gimnasio .text-title {
   font-weight: 900;

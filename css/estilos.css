@@ -358,6 +358,22 @@ footer .grilla .footer__aclaracion {
   }
 }
 /*CONTACTO PAGE*/
+/*Fijo footer al fondo del sitio*/
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: rgb(240, 247, 238);
+}
+
+footer {
+  margin-top: auto;
+}
+
 .contacto__main {
   height: 100%;
   overflow-x: hidden;

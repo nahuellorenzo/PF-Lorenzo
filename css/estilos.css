@@ -96,6 +96,17 @@ img {
   top: 87%;
 }
 
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .whatsApp__div {
+    height: 70px;
+    width: 70px;
+    background-color: transparent;
+    position: fixed;
+    left: 90%;
+    top: 82%;
+  }
+}
 /* DESKTOP */
 @media screen and (min-width: 1024px) {
   .main .main__actividades .article__position, .main__gimnasios .main__actividades .article__position, .main_nosotros .main__actividades .article__position {

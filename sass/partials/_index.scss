@@ -101,6 +101,17 @@ img{
     top: 87%;  
 }
 
+/* TABLET */
+@media screen and (min-width: 768px){
+    .whatsApp__div{
+        @include sizes(70px, 70px);
+        background-color: transparent;
+        position: fixed;
+        left: 90%;
+        top: 82%;  
+    }
+}
+
 /* DESKTOP */
 @media screen and (min-width: 1024px){
     .main{
